@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
       const fetchUserData = async () => {
         try {
           // Guessing a user endpoint, adjust if needed
-          const response = await apiClient.get('/users/me'); 
+          const response = await apiClient.get('/19-10/users'); 
           setUser(response.data);
         } catch (error) {
           console.error("Failed to fetch user data:", error);
@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password) => {
     try {
-      const response = await apiClient.post('/auth/login', { email, password }); // Changed endpoint
+      const response = await apiClient.post('/19-10/auth/sign-in', { email, password });
       // Assuming the token is in response.data.accessToken
       const accessToken = response.data.accessToken; 
       setToken(accessToken);
@@ -43,8 +43,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (email, password, name) => {
     try {
-      // Corrected signup endpoint to '/auth/register' with 'name' in body
-      await apiClient.post('/auth/register', { email, password, name });
+      await apiClient.post('/19-10/auth/sign-up', { email, password, name });
       return { success: true };
     } catch (error) {
       console.error("Signup failed:", error);

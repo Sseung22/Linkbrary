@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'https://linkbrary-api.vercel.app/api/v1',
+  baseURL: 'https://linkbrary-api.vercel.app/',
   headers: {
     'Content-Type': 'application/json',
   },

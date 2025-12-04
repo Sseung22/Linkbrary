@@ -180,3 +180,69 @@ main {
   font-weight: 700;
   color: #605BFF;
 }
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #1c2128;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  border: 1px solid #30363d;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 15px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-button.cancel {
+  background-color: #30363d;
+  color: white;
+}
+
+.modal-button.add {
+  background-color: #605BFF;
+  color: white;
+}
+}
