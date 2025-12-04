@@ -1,0 +1,108 @@
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f6ff;
+}
+
+.login-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.email-login-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, #6d6afe 0%, #6ae3fe 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #ff4d4f;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.social-login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px; /* Add margin to separate from email login form */
+}
+
+.social-login-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-login-button.google {
+  background-color: #4285f4;
+  color: white;
+}
+
+.social-login-button.kakao {
+  background-color: #fee500;
+  color: #000000;
+}
+
+.error-message {
+  color: #ff4d4f;
+  margin-bottom: 15px;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #6d6afe;
+  font-weight: 600;
+}
