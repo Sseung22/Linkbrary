@@ -1,0 +1,29 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 152px); /* Adjust height based on header */
+  background-image: url('../assets/image/landing_bg.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-content h1 {
+  font-size: 64px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.add-link-button {
+  background-image: linear-gradient(135deg, #6d6afe 0%, #6ae3fe 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
